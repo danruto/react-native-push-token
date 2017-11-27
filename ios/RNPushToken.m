@@ -19,10 +19,10 @@ RCT_EXPORT_MODULE()
 
 - (void)startObserving
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                     selector:@selector(handleRemoteNotificationsRegistered:)
-                                         name:RNPushNotificationReceived
-                                       object:nil];
+    [[NSNotificationCenter defaultCenter]   addObserver:self
+                                            selector:@selector(handleRemoteNotificationsRegistered:)
+                                            name:RNPushNotificationReceived
+                                            object:nil];
 }
 
 - (void)stopObserving
@@ -44,8 +44,8 @@ RCT_EXPORT_MODULE()
         [hexString appendFormat:@"%02x", bytes[i]];
     }
     [[NSNotificationCenter defaultCenter] postNotificationName:RNPushNotificationReceived
-                                                        object:self
-                                                      userInfo:@{@"deviceToken" : [hexString copy]}];
+                                          object:self
+                                          userInfo:@{@"deviceToken" : [hexString copy]}];
 }
      
 @end

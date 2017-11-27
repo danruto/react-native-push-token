@@ -1,6 +1,7 @@
 
 {
   "name": "react-native-push-token",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +14,7 @@
   "author": "danny@pixelbru.sh",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2",
+    "react-native": "^0.50.4",
     "react-native-windows": "0.41.0-rc.1"
 
   }
