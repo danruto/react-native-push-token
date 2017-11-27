@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "danny@pixelbru.sh" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/author/RNPushToken.git", :tag => "master" }
+  s.source       = { :git => "https://github.com/danruto/react-native-push-token.git", :tag => "master" }
   s.source_files  = "RNPushToken/**/*.{h,m}"
   s.requires_arc = true
 

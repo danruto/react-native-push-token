@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A699E908DAA8F21C343E8E5 /* libPods-RNReactNativePushToken.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A9BABDC6E55C0ADC8A5782 /* libPods-RNReactNativePushToken.a */; };
 		B3E7B58A1CC2AC0600A0062D /* RNPushToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNPushToken.m */; };
 /* End PBXBuildFile section */
 
@@ -25,9 +24,6 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNPushToken.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPushToken.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2412DCC1BE26A5BA32CA353C /* Pods-RNReactNativePushToken.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNReactNativePushToken.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNReactNativePushToken/Pods-RNReactNativePushToken.release.xcconfig"; sourceTree = "<group>"; };
-		541871F969C30A672D6B165C /* Pods-RNReactNativePushToken.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNReactNativePushToken.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNReactNativePushToken/Pods-RNReactNativePushToken.debug.xcconfig"; sourceTree = "<group>"; };
-		A8A9BABDC6E55C0ADC8A5782 /* libPods-RNReactNativePushToken.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNReactNativePushToken.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNPushToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPushToken.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNPushToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPushToken.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,22 +33,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A699E908DAA8F21C343E8E5 /* libPods-RNReactNativePushToken.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0287068E4805C859E0FAC382 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				541871F969C30A672D6B165C /* Pods-RNReactNativePushToken.debug.xcconfig */,
-				2412DCC1BE26A5BA32CA353C /* Pods-RNReactNativePushToken.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,22 +47,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1DBB125E344808E22FB0DC4A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A8A9BABDC6E55C0ADC8A5782 /* libPods-RNReactNativePushToken.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
 				B3E7B5881CC2AC0600A0062D /* RNPushToken.h */,
 				B3E7B5891CC2AC0600A0062D /* RNPushToken.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				0287068E4805C859E0FAC382 /* Pods */,
-				1DBB125E344808E22FB0DC4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,11 +63,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNPushToken" */;
 			buildPhases = (
-				91CC32F6FF07CB58516C25FA /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
-				7E9F5DC428AB4C07E9D3574E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,42 +106,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7E9F5DC428AB4C07E9D3574E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNReactNativePushToken/Pods-RNReactNativePushToken-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91CC32F6FF07CB58516C25FA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RNReactNativePushToken-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -264,7 +202,6 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 541871F969C30A672D6B165C /* Pods-RNReactNativePushToken.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -281,7 +218,6 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2412DCC1BE26A5BA32CA353C /* Pods-RNReactNativePushToken.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

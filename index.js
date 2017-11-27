@@ -1,6 +1,6 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNReactNativePushToken } = NativeModules;
+const { RNPushToken } = NativeModules;
 
-export default RNReactNativePushToken;
+export default RNPushToken;

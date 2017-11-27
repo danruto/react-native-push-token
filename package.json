@@ -14,7 +14,7 @@
   "author": "danny@pixelbru.sh",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.50.4",
+    "react-native": "^0.47.2",
     "react-native-windows": "0.41.0-rc.1"
 
   }
