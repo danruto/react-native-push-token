@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3052A7371FCCD42D00777F21 /* RNPushToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 3052A7361FCCD42D00777F21 /* RNPushToken.m */; };
-		3052A7381FCCD43500777F21 /* RNPushToken.h in Sources */ = {isa = PBXBuildFile; fileRef = 3052A7351FCCD42B00777F21 /* RNPushToken.h */; };
+		30F1356C1FCD0F7B002EB341 /* RNPushTokenSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F1356B1FCD0F7B002EB341 /* RNPushTokenSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +27,8 @@
 		134814201AA4EA6300B7C361 /* libRNPushToken.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPushToken.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3052A7351FCCD42B00777F21 /* RNPushToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPushToken.h; sourceTree = "<group>"; };
 		3052A7361FCCD42D00777F21 /* RNPushToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPushToken.m; sourceTree = "<group>"; };
+		30F1356A1FCD0F7B002EB341 /* RNPushTokenSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPushTokenSingleton.h; sourceTree = "<group>"; };
+		30F1356B1FCD0F7B002EB341 /* RNPushTokenSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPushTokenSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,8 @@
 			children = (
 				3052A7351FCCD42B00777F21 /* RNPushToken.h */,
 				3052A7361FCCD42D00777F21 /* RNPushToken.m */,
+				30F1356A1FCD0F7B002EB341 /* RNPushTokenSingleton.h */,
+				30F1356B1FCD0F7B002EB341 /* RNPushTokenSingleton.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,7 +117,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3052A7381FCCD43500777F21 /* RNPushToken.h in Sources */,
+				30F1356C1FCD0F7B002EB341 /* RNPushTokenSingleton.m in Sources */,
 				3052A7371FCCD42D00777F21 /* RNPushToken.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
