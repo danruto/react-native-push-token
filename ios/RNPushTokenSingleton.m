@@ -36,7 +36,7 @@
         [hexString appendFormat:@"%02x", bytes[i]];
     }
     
-    deviceToken = [hexString copy];
+    self.deviceToken = [hexString copy];
 }
 
 @end
