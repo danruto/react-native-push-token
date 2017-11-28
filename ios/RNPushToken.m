@@ -12,13 +12,13 @@ RCT_EXPORT_MODULE()
 }
      
 RCT_REMAP_METHOD(getToken,
-                 resolver:(RCTPromiseResolveBlock)resolve
-                 rejecter:(RCTPromiseRejectBlock)reject)
+                 getTokenWithResolver:(RCTPromiseResolveBlock)resolve
+                 getTokenWithRejecter:(RCTPromiseRejectBlock)reject)
 {
     RNPushTokenSingleton *sharedManager = [RNPushTokenSingleton sharedManager];
     NSString *dt = [sharedManager deviceToken];
     if ([dt length] == 0) reject(@"Error", @"Error", nil);
-    return resolve(dt);
+    else resolve(dt);
 }
 
 @end
