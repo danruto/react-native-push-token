@@ -1,6 +1,16 @@
 
-import { NativeModules } from 'react-native';
+import { NativeModules, NativeEventEmitter } from 'react-native';
 
 const { RNPushToken } = NativeModules;
 
-export default RNPushToken;
+const RNPushNotificationReceivedBridgeEvent = 'RNPushTokenReceived';
+const tokenEmitter = new NativeEventEmitter(RNPushToken);
+
+const addListener = (onRegister) => {
+    tokenEmitter.addListener(
+        RNPushNotificationReceivedBridgeEvent,
+        (userInfo) => onRegister(userInfo.deviceToken)
+    );
+};
+
+export default addListener;
