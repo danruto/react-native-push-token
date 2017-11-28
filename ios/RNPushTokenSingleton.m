@@ -8,7 +8,7 @@
 #pragma mark Singleton Methods
 
 + (id)sharedManager {
-    static RNPushToken *sharedMyManager = nil;
+    static RNPushTokenSingleton *sharedMyManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedMyManager = [[self alloc] init];

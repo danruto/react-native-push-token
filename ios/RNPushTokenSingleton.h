@@ -1,3 +1,4 @@
+#import <foundation/Foundation.h>
 
 @interface RNPushTokenSingleton : NSObject {
     NSString *deviceToken;
