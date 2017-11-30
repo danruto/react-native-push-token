@@ -4,6 +4,8 @@
 ## Getting started
 
 `$ npm install react-native-push-token --save`
+or
+`$ yarn add react-native-push-token`
 
 ### Mostly automatic installation
 
@@ -55,8 +57,12 @@
 
 ## Usage
 ```javascript
-import addDeviceTokenListener from 'react-native-push-token';
+import RNPushToken from 'react-native-push-token';
 
-addDeviceTokenListener((token) => console.log(token));
+try {
+  const token = await RNPushToken.getToken();
+} catch (error) {
+  console.error(error);
+}
 ```
   
