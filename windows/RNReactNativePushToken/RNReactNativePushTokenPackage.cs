@@ -4,7 +4,7 @@ using ReactNative.UIManager;
 using System;
 using System.Collections.Generic;
 
-namespace React.Native.Push.Token.RNReactNativePushToken
+namespace React.Native.Push.Token.RNPushToken
 {
     /// <summary>
     /// Package defining core framework modules (e.g., <see cref="UIManagerModule"/>).
@@ -12,7 +12,7 @@ namespace React.Native.Push.Token.RNReactNativePushToken
     /// other framework parts (e.g., with the list of packages to load view
     /// managers from).
     /// </summary>
-    public class RNReactNativePushTokenPackage : IReactPackage
+    public class RNPushTokenPackage : IReactPackage
     {
         /// <summary>
         /// Creates the list of native modules to register with the react
@@ -24,7 +24,7 @@ namespace React.Native.Push.Token.RNReactNativePushToken
         {
             return new List<INativeModule>
             {
-                new RNReactNativePushTokenModule(),
+                new RNPushTokenModule(),
             };
         }
 

@@ -7,12 +7,12 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
 
-public class RNTokenModule extends ReactContextBaseJavaModule {
+public class RNPushTokenModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
   private String mDeviceToken = "";
 
-  public RNTokenModule(ReactApplicationContext reactContext) {
+  public RNPushTokenModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
 
@@ -21,7 +21,7 @@ public class RNTokenModule extends ReactContextBaseJavaModule {
 
   @Override
   public String getName() {
-    return "RNPushToken";
+    return "RNPushTokenModule";
   }
 
   @ReactMethod

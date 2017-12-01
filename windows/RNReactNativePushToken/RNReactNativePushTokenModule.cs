@@ -4,17 +4,17 @@ using System.Collections.Generic;
 using Windows.ApplicationModel.Core;
 using Windows.UI.Core;
 
-namespace React.Native.Push.Token.RNReactNativePushToken
+namespace React.Native.Push.Token.RNPushToken
 {
     /// <summary>
     /// A module that allows JS to share data.
     /// </summary>
-    class RNReactNativePushTokenModule : NativeModuleBase
+    class RNPushTokenModule : NativeModuleBase
     {
         /// <summary>
-        /// Instantiates the <see cref="RNReactNativePushTokenModule"/>.
+        /// Instantiates the <see cref="RNPushTokenModule"/>.
         /// </summary>
-        internal RNReactNativePushTokenModule()
+        internal RNPushTokenModule()
         {
 
         }
@@ -26,7 +26,7 @@ namespace React.Native.Push.Token.RNReactNativePushToken
         {
             get
             {
-                return "RNReactNativePushToken";
+                return "RNPushToken";
             }
         }
     }
