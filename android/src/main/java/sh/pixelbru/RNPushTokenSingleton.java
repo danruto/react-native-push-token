@@ -8,8 +8,7 @@ public class RNPushTokenSingleton {
     private static RNPushTokenSingleton instance;
     private String deviceToken;
 
-    private RNPushTokenSingleton() {
-    }
+    private RNPushTokenSingleton(){}
 
     public static synchronized RNPushTokenSingleton getInstance() {
         if (instance == null) {
@@ -19,11 +18,6 @@ public class RNPushTokenSingleton {
         return instance;
     }
 
-    public String getDeviceToken() {
-        return deviceToken;
-    }
-
-    public void setDeviceToken(String value) {
-        this.deviceToken = value;
-    }
+    public String getDeviceToken() { return deviceToken; }
+    public void setDeviceToken(String value) { this.deviceToken = value; }
 }

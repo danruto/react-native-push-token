@@ -25,21 +25,18 @@ public class RNPushTokenModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "RNPushTokenModule";
+    return "RNPushTokenModule";
     }
 
     @ReactMethod
     public void getToken(Promise promise) {
         String token = RNPushTokenSingleton.getInstance().getDeviceToken();
-        if (token.isEmpty())
-            promise.reject("Error", "Error");
-        else
-            promise.resolve(token);
+        if (token.isEmpty()) promise.reject("Error", "Error");
+        else promise.resolve(token);
     }
 
     private void registerNotificationsRegistration() {
-        IntentFilter intentFilter = new IntentFilter(
-                getReactApplicationContext().getPackageName() + ".RNPushTokenRegistered");
+        IntentFilter intentFilter = new IntentFilter(getReactApplicationContext().getPackageName() + ".RNPushTokenRegistered");
 
         getReactApplicationContext().registerReceiver(new BroadcastReceiver() {
             @Override
