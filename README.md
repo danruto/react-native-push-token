@@ -34,8 +34,8 @@ or
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.reactlibrary.RNReactNativePushTokenPackage;` to the imports at the top of the file
-  - Add `new RNReactNativePushTokenPackage()` to the list returned by the `getPackages()` method
+  - Add `import com.reactlibrary.RNPushTokenPackage;` to the imports at the top of the file
+  - Add `new RNPushTokenPackage()` to the list returned by the `getPackages()` method with the senderID e.g. `new RNPushTokenPackage(getApplicationContext().getString(R.string.senderID)),`
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-push-token'
@@ -45,6 +45,20 @@ or
   	```
       compile project(':react-native-push-token')
   	```
+4. Add the following to the android manifest
+    ```
+      <service android:name="sh.pixelbru.RNPushTokenService" />
+    ```
+
+NOTE: You may need to set a specific gcm/firebase version to your app's build.grade to ensure all versions across your deps are the same e.g.
+    ```
+    compile ('com.google.firebase:firebase-messaging:11.0.2') {
+        force = true
+    }
+    compile('com.google.android.gms:play-services-gcm:11.0.2') {
+        force = true
+    }
+    ```
 
 #### Windows
 [Read it! :D](https://github.com/ReactWindows/react-native)
